@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChaiGpt - خدامك يا باشا</title>
+
+  <!-- Google Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@32,400,0,0" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/images/olova.png" type="image/x-icon" />
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Header Section -->
+    <header class="app-header">
+      <h1 class="heading">ازيك يا كبير؟</h1>
+      <h4 class="sub-heading">أؤمر يا باشا.. اخدمك برقبتي، قولي بس عايز إيه؟</h4>
+    </header>
+
+    <!-- Suggested Prompts -->
+    <ul class="suggestions">
+      <li class="suggestions-item">
+        <p class="text">صمم موقع بسيط باستخدام HTML لعرض صور.</p>
+        <span class="icon material-symbols-rounded">draw</span>
+      </li>
+      <li class="suggestions-item">
+        <p class="text">قولي نكتة مضحكة.</p>
+        <span class="icon material-symbols-rounded">lightbulb</span>
+      </li>
+      <li class="suggestions-item">
+        <p class="text">رشحلي أحسن مواقع أتعلم منها برمجة.</p>
+        <span class="icon material-symbols-rounded">explore</span>
+      </li>
+      <li class="suggestions-item">
+        <p class="text">مين أفضل لاعب كرة قدم في 2024؟</p>
+        <span class="icon material-symbols-rounded">sports_soccer</span>
+      </li>
+    </ul>
+
+    <!-- Chat Container -->
+    <div class="chats-container"></div>
+
+    <!-- Prompt Input Section -->
+    <div class="prompt-container">
+      <div class="prompt-wrapper">
+        <form action="#" class="prompt-form">
+          <input type="text" placeholder="شبيك لبيك.. اطلب واتمنى ✨" class="prompt-input" required />
+
+          <div class="prompt-actions">
+
+            <!-- File Upload Section -->
+            <div class="file-upload-wrapper">
+              <img src="#" alt="معاينة الملف" class="file-preview" />
+              <input id="file-input" type="file" accept="image/*, .pdf, .txt, .csv" hidden />
+              <button type="button" class="file-icon material-symbols-rounded">description</button>
+              <button id="cancel-file-btn" type="button" class="material-symbols-rounded">close</button>
+              <button id="add-file-btn" type="button" class="material-symbols-rounded">attach_file</button>
+            </div>
+
+            <!-- Control Buttons -->
+            <button id="stop-response-btn" type="button" class="material-symbols-rounded">stop_circle</button>
+            <button id="send-prompt-btn" class="material-symbols-rounded">arrow_upward</button>
+          </div>
+        </form>
+
+        <!-- Extra Actions -->
+        <button id="theme-toggle-btn" class="material-symbols-rounded">light_mode</button>
+        <button id="delete-chats-btn" class="material-symbols-rounded">delete</button>
+      </div>
+
+      <!-- Footer / Disclaimer -->
+      <p class="disclaimer-text">💻 محسوبك الطيار جايلك من Gemini API | فكرة وإخراج: <strong>Eyad Ayman</strong></p>
+    </div>
+
+  </div>
+
+  <!-- Main Script -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
